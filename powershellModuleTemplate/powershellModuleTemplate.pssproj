@@ -25,11 +25,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="en_US\" />
+    <Folder Include="private\" />
+    <Folder Include="public\" />
+    <Folder Include="_test\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="powershellModuleTemplate.psd1" />
     <Compile Include="powershellModuleTemplate.psm1" />
-    <Compile Include="powershellModuleTemplate.tests.ps1" />
+    <Compile Include="private\PrivateFunctionExample.ps1" />
+    <Compile Include="public\PublicFunctionExample.ps1" />
+    <Compile Include="public\Test-Update.ps1" />
+    <Compile Include="_test\powershellModuleTemplate.tests.ps1" />
+    <Compile Include="__initialization.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="en_US\about_PowershellModuleTemplate.help.txt" />
+    <Content Include="PowershellModuleTemplate.Format.ps1xml" />
+    <Content Include="private\README.md" />
+    <Content Include="public\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />

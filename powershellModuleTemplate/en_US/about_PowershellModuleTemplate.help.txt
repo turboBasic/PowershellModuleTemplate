@@ -1,0 +1,13 @@
+TOPIC
+    about_PowershellModuleTemplate
+
+SHORT DESCRIPTION
+    Describes template for creating Powershell modules.
+
+LONG DESCRIPTION
+    This template is based on best practices of creating and maintaining
+    Powershell modules
+
+SEE ALSO
+    about_Modules
+    about_Scopes

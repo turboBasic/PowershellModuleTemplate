@@ -1,0 +1,3 @@
+function PublicFunctionExample {
+    $true
+}
